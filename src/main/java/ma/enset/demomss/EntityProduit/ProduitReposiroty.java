@@ -12,5 +12,6 @@ public interface ProduitReposiroty extends JpaRepository<Produit, Long> {
     @RestResource(path="/ByName")
     Page<Produit> findByNameContains (
             @Param("kw") String name, Pageable pageable
+            //commentaire
     );
 }
